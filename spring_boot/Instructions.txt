@@ -1,0 +1,27 @@
+Steps from: https://projects.spring.io/spring-boot/
+
+1. Create new Maven project
+
+2. Update pom.xml with
+
+   <parent>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-parent</artifactId>
+       <version>1.5.10.RELEASE</version>
+   </parent>
+   <dependencies>
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-web</artifactId>
+       </dependency>
+   </dependencies>
+
+3. Create Application class to bootstrap service
+   Needs Main method to call
+      SpringApplication.run(ExampleController.class, args);
+
+4. Create Controller class to provide endpoints
+
+
+
+Plenty of examples: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples

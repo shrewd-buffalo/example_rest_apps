@@ -1,0 +1,22 @@
+See ../spring_boot first
+
+Two dependencies enable database access
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- H2 Database -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+Repository access via dynamic proxy through use of Spring Data JPA
+
+Notes:
+- Remove "spring.datasource.url" in application.properties to use only in-memory database
+- Use of "spring.jpa.hibernate.ddl-auto=none" stops the tables being auto-recreated each run
+
+H2 web console accessed via http://localhost:8080/h2-console
