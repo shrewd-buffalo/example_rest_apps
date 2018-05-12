@@ -12,3 +12,17 @@ docker pull redis
 
 # Don't care about persistent storage
 docker run -d --name "example-redis" -p 6379:6379 redis
+
+# Resources
+
+Lightweight redis client
+https://github.com/xetorthio/jedis
+
+Redis
+https://redis.io/
+
+Other Redis Clients
+https://redis.io/clients
+
+Docker Hub Redis
+https://hub.docker.com/_/redis/
