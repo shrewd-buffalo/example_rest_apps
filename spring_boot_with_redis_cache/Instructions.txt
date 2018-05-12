@@ -1,0 +1,14 @@
+See ../spring_boot first
+
+# Redis client dependency
+<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    <version>2.9.0</version>
+</dependency>
+
+# Docker image for redis
+docker pull redis
+
+# Don't care about persistent storage
+docker run -d --name "example-redis" -p 6379:6379 redis
